@@ -169,13 +169,13 @@ async def create_alert_urls(alert_info: dict) -> dict[str, str]:
 
     create_image_url: str = ""
     image_url: str = ""
-    chart_url: str = ""
+    # chart_url: str = ""
 
-    if alert_info.get("base_url"):
-        create_image_url = tradingview_create_image_url(alert_info=alert_info)
-        image_url, chart_url = await create_tradingview_image(
-            create_image_url=create_image_url
-        )
+    # if alert_info.get("base_url"):
+    #     create_image_url = tradingview_create_image_url(alert_info=alert_info)
+    #     image_url, chart_url = await create_tradingview_image(
+    #         create_image_url=create_image_url
+    #     )
 
     alert_info["create_image_url"] = create_image_url
     alert_info["image_url"] = image_url
