@@ -16,7 +16,6 @@ ALERT_RECEIVER_NAME: str | None = os.getenv(key="ALERT_RECEVIER_NAME")
 ALERT_RECEIVER: str | None = os.getenv(key="ALERT_RECEVIER")
 WICK_TEST_BOT: str | None = os.getenv(key="WICK_TEST_BOT")
 WICK_TEST_CHART_URL: str | None = os.getenv(key="WICK_TEST_CHART_URL")
-TV_CHART: str | None = os.getenv(key="TV_CHART_URL")
 REF: str | None = os.getenv(key="REF_CODE")
 
 
