@@ -9,6 +9,7 @@ import discord
 from discord.ext import commands
 
 import config
+import services.alerts.functions as alerts
 import services.shared.functions as shared
 from config import logger
 
@@ -25,10 +26,11 @@ async def on_ready() -> None:
 
 
 @bot.event
-async def on_message() -> None:
+async def on_message(message) -> None:
     """
     Controller for on_message event.
     """
+    await alerts.valid_webhook_msg(message=message)
     return
 
 
